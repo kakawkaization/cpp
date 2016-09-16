@@ -1,19 +1,15 @@
 #include <iostream>
 using namespace std;
 
-void st(int a);
-
 int main() {
+	char a[80];
 
-	st(8);
-	
+	cin >> a;
+
+	if(a=='uf') cout << "right\n";
+
+
+	else cout << "no\n";
+
 	return 0;
-}	
-
-void st(int a) {
-	int b=8;
-	if(b==8) return;
-	
-	cout << "yes its 8\n";
-
 }
