@@ -6,7 +6,7 @@ int main() {
 
 	cin >> a;
 
-	if(a=='uf') cout << "right\n";
+	if(a=="uf") cout << "right\n";
 
 
 	else cout << "no\n";
