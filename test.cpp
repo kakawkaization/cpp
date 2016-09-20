@@ -2,14 +2,11 @@
 using namespace std;
 
 int main() {
-	char a[80];
+	int a,b;
 
-	cin >> a;
+	cin >> a >> b;
 
-	if(a=="uf") cout << "right\n";
-
-
-	else cout << "no\n";
+	cout << "a = " << a << ", " << "b = " << b << ".\n";
 
 	return 0;
 }
