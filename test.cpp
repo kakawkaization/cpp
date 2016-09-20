@@ -1,12 +1,11 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main() {
-	int a,b;
+	int a=16;
 
-	cin >> a >> b;
-
-	cout << "a = " << a << ", " << "b = " << b << ".\n";
+	cout << sqrt(a) << "\n";
 
 	return 0;
 }
