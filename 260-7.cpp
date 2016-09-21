@@ -8,7 +8,7 @@ void reset();
 int i=0;
 
 int main() {
-	byThrees();
+	byThrees() << "\n";
 
 	return 0;
 }
@@ -28,4 +28,5 @@ void reset() {
 		cout << "\n";
 		i=0;
 	}	
+	
 }
