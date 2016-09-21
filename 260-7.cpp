@@ -6,6 +6,8 @@ void byThrees();
 void reset();
 
 int i=0;
+int count=0;
+int a;
 
 int main() {
 	byThrees();
@@ -14,18 +16,19 @@ int main() {
 }
 
 void byThrees() {
-	int count=0;
-
-	for (i;i<=12;i+=3) {
+	cout << "enter a: ";
+	cin >> a;
+	for (i;i<=120;i+=3) {
 		reset();
 		cout << i << " ";
+		if(count==5) break;
 	}
-
 }
 
 void reset() {
-	if(i==9) {
+	if(i==a) {
 		cout << "\n";
 		i=0;
+		count++;
 	}	
 }
