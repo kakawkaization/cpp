@@ -8,8 +8,6 @@ int main(int argc,char *argv[]) {
 	cout << "Enter password: ";
 	cin >> a;
 
-	for(int i=0;argv[i];i++);
-
 	if(!strcmp(argv[1],a))  
 		cout << "correct.\n";
 
