@@ -7,6 +7,8 @@ int main() {
 	char str[]="This is test";
 
 	reverse(str);
+	
+	cout << "\n";
 
 	return 0;
 }
@@ -14,8 +16,8 @@ int main() {
 void reverse(char *s) {
 	if(*s)
 		reverse(s+1);
-//	else
-//		return;
+	else
+		return;
 
 	cout << *s;
 }

@@ -1,18 +1,23 @@
 #include <iostream>
 using namespace std;
 
-void fr(int b);
+void rnumb(int a);
 
 int main() {
-	int a;
-	void fr(a);
+
+	rnumb(10);
+
+	cout << "\n";
 
 	return 0;
 }
 
-void fr(int b) {
-	int a=0;
-	fr(a+1);
+void rnumb(int a) {
 	
+	if(a!=0) 
+		rnumb(a-1);
+	else
+		return;
+
 	cout << a << " ";
 }
