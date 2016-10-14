@@ -1,11 +1,16 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
-int main() {
-	int a=16;
+int &f();
 
-	cout << sqrt(a) << "\n";
+int main() {
+	cout << f() << "\n";
 
 	return 0;
+}
+
+int f() {
+	int i=10;
+
+	return i;
 }
