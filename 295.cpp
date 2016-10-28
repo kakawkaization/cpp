@@ -15,7 +15,7 @@ int main() {
 
 	mystrcat(str1, str2);
 
-	cout << str2 << "\n";
+	cout << str1 << "\n";
 
 	return 0;
 }
