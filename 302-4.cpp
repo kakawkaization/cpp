@@ -24,7 +24,10 @@ void rnmound(double &g) {
 	
 	d = modf(num, &i);
 	
-	n = i + 1;
+	if(d > 0.5) 
+		n = i + 1;
+	else
+		n = i - 1;	
 
 	cout << n << "\n";
 }
