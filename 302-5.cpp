@@ -2,7 +2,7 @@
 using namespace std;
 
 void swap(int &x, int &y);
-int min_swap(int &x, int &y);
+int &min_swap(int &x, int &y);
 
 int main() {
 	int i, j;
@@ -17,7 +17,8 @@ int main() {
 
 	cout << "Значения переменных i и j после обмена: ";
 	cout << i << " " << j << "\n";
-	cout << "Минимальное значение: " << min_swap(i,j) << "\n";
+	
+	cout << "Минимальное значение: " << min_swap(i, j) << "\n";
 
 	return 0;
 }
@@ -32,7 +33,7 @@ void swap(int &x, int &y) {
 
 }
 
-int min_swap(int &x, int &y) {
+int &min_swap(int &x, int &y) {
 	if(x < y ) return x;
 
 	else return y;
