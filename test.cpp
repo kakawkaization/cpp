@@ -2,23 +2,11 @@
 using namespace std;
 
 int main() {
-	char *s1, *s2;
-
-	char str1[80] = "haha1";
-	char str2[80] = "haha2";
-
-	s1 = str1;
-	s2 = str2;
+	int *i, j[10];
 	
-	cout << s1 << "\n";
+	i = j;
 
-	while(*s1) s1++;
-	
-	*s1 = *s2;
-	
+	cout << i << "\n";
 
-	cout << s1 << "\n";
-	
 	return 0;
 }
-	
