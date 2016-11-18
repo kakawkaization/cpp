@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 #include <cstring>
 using namespace std;
 
@@ -25,7 +26,7 @@ int main() {
 
 		cin >> mc;
 	
-		char m;
+		char m[80];
 
 		if(mc == '1') {
 			for(; ;) {
@@ -41,7 +42,7 @@ int main() {
 				cout << "Enter b to return\n\n";
 				cin >> m;
 
-				if(m == 'b') break;
+				if(!strcmp(m, "b")) break;
 			}
 		}
 
@@ -53,9 +54,9 @@ int main() {
 				
 				cout << "\n";
 
-				show_binary((int) m);
+				show_binary(atoi(m));
 
-				if(m == 'b') break;
+				if(!strcmp(m, "b")) break;
 			}
 		}
 	}
