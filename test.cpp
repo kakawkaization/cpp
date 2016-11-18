@@ -2,21 +2,10 @@
 using namespace std;
 
 int main() {
-	char a[80];
-	int i;
-	
-	cin >> a;
-
-	for(i = 0; i < a[i]; i++) {
-
-
-	if(a == "haha") cout << "yeah";
-	else cout << "try again";
-	
-	}
-	cout << a[i];
-	cout  << "\n";
-
+	char m;
+//	cin >> m;
+	int n = 2;
+	cout <<(char) n << "\n";		
 
 	return 0;
 }
