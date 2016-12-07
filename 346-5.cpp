@@ -5,8 +5,20 @@ int counter(int i);
 
 int main() {
 	int a;
-	cout << "Press 1: ";
+	while(a != 2) {
+		cout << "Press 1: ";
 	
-	cin >> a;
+		cin >> a;
 
-	
+		cout << counter(a) << "\n";;
+	}
+
+	return 0;
+}
+
+int counter(int i) {
+	static int sum = 0;
+	sum++;
+
+	return sum;
+}
