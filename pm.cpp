@@ -6,9 +6,9 @@ int counter();
 
 int main() {
 	int b;
+	int i;
 	char p[80];
 	char a[80] = "haha";
-	char n;
 
 	for(; ;) {
 		cout << "enter password: ";
@@ -16,8 +16,14 @@ int main() {
 
 		if(!strcmp(p, a)) {
 				for(; ;) {
-					cout << "cool, you here! Press q to exit\n";
+					cout << "\n";
+					cout << "Emails:\n\n";
+					cout << "tony ap2mdsSlo\n";
+					cout << "johny dls8jHs\n\n";
+					
+					cout << "press q to exit\n";
 					cin >> p;
+
 					if(!strcmp(p, "q")) break;
 				}
 		}
