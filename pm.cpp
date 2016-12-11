@@ -20,6 +20,9 @@ int main() {
 					cout << "Emails:\n\n";
 					cout << "tony ap2mdsSlo\n";
 					cout << "johny dls8jHs\n\n";
+					cout << "Servers:\n\n";
+					cout << "kelly ds9sd\n";
+					cout << "root dsd78sd\n\n";
 					
 					cout << "press q to exit\n";
 					cin >> p;
