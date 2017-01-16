@@ -5,7 +5,8 @@ unsigned char rrotate(unsigned char val, int n);
 unsigned char lrotate(unsigned char val, int n);
 
 int main() {
-	char ch = 'T';
+	//char ch = 'T';
+	char ch[80] = "hahaha";
 	char key;
 
 //	cout << "enter key: ";

@@ -5,21 +5,22 @@ using namespace std;
 
 void show_binary(unsigned int u);
 
-int main() {
-	char m[80];
+int main(int argc, char *argv[]) {
 
-	for(; ;) {
-		cout << "\nenter number from 0 to 255 or enter q to exit\n\n";
-		cin >> m;
+	int m;
 
-		cout << "\n";
-
-		show_binary(atoi(m));
-		
-		cout << "\n";
-
-		if(!strcmp(m, "q")) break;
+	if(argc!=2) {
+		cout << "Usage: two [number].\n";
+		return 1;
 	}
+
+	m = atoi(argv[1]);
+ 
+	show_binary(m);
+
+	cout << "\n";
+		
+
 
 	return 0;
 }

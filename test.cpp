@@ -2,12 +2,18 @@
 using namespace std;
 
 int main() {
-	char m[] = "hahahaha kaka";
-	char key = 77;
+	char ch;
 
-	for(int i = 0; i < 20; i++) 
-		m[i] = m[i] ^ 77;
-		cout << m;
+	for(int i = 0; i < 10; i++) {
+		ch = 'a' + i;
+		cout << ch;
+
+		ch = ch & 223;
+
+		cout << ch << " ";
+	}
+
+	cout << "\n";
 
 	return 0;
 }
