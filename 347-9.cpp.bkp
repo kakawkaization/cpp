@@ -1,22 +1,11 @@
 #include <iostream>
-#include <cstdlib>
 using namespace std;
 
-unsigned char rrotate(unsigned char *val, int n);
-unsigned char lrotate(unsigned char *val, int n);
+unsigned char rrotate(unsigned char val, int n);
+unsigned char lrotate(unsigned char val, int n);
 
 int main() {
-	unsigned char ch[80] = "test";
-	char a[80];
-	//char *p;
-	//*p = a;
-	int b;
-	int i;
-
-	cout << "enter count of bits: ";
-	cin >> a;
-
-	b = atoi(a);
+	char ch = 'T';
 
 	cout << "Исходное значение в двоичном коде:\n";
 
@@ -24,15 +13,14 @@ int main() {
 
 	cout << "Результат 8-кратного циклического сдвига влево:\n";
         //for(int i = 0; i < 8; i++) {
-		for(i = 0; i < 80; i++) ch[i];
-                lrotate(ch, b);
-//                cout << ch << "\n";
+                ch = lrotate(ch, 1);
+                cout << ch << "\n";
 //        }
 
-//	cout << "Результат 8-кратного циклического сдвига вправо:\n";
+	cout << "Результат 8-кратного циклического сдвига вправо:\n";
 	//for(int i = 0; i < 8; i++) {
-//		rrotate(ch, b);
-//		cout << ch << "\n";
+		ch = rrotate(ch, 1);
+		cout << ch << "\n";
 //	}
 
 	return 0;
