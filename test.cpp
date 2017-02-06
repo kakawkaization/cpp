@@ -1,21 +1,20 @@
 #include <iostream>
 using namespace std;
 
-char lrotate(char *val);
+void test(char *s);
 
 int main() {
-	char ch[80] = "test";
-	char *p;
-
-	p = ch;
-
-	cout << p << "\n";
+	int i;
+	char word[80] = "haha";
+	
+	test(word);
 
 	return 0;
 }
 
-char lrotate(char *val) {
-	val++;
+void test(char *s) {
+//	int i;
+//	for(i = 0; i < 10; i++) s[i];
 
-	return *val;
+	cout << s;
 }
