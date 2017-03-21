@@ -1,46 +1,49 @@
 #include <iostream>
 using namespace std;
 
-//unsigned char rrotate(unsigned char *val, int n);
-unsigned char lrotate(unsigned char *val, int n);
+unsigned char *rrotate(unsigned char *val, int n);
+unsigned char *lrotate(unsigned char *val, int n);
 
 int main() {
-	unsigned char ch[80] = "test";
-	unsigned char d;
-	unsigned char *p;
+	unsigned char ch[80] = "haha";
+	unsigned char *wch;
+	
+	wch = ch;
+
 
 	cout << "Исходное значение в двоичном коде:\n";
 
-	cout << ch << "\n";
+	cout << wch << "\n";
 
 	cout << "Результат 8-кратного циклического сдвига влево:\n";
-        d = lrotate(ch, 1);
-        cout << d << "\n";
+	wch = lrotate(wch, 1);
+	cout << wch << "\n";
 
-/*	cout << "Результат 8-кратного циклического сдвига вправо:\n";
-	ch = rrotate(ch, 1);
-	cout << ch << "\n";
-*/
+	cout << "Результат 8-кратного циклического сдвига вправо:\n";
+	wch = rrotate(wch, 1);
+	cout << wch << "\n";
+
 	return 0;
 }
 
-unsigned char lrotate(unsigned char *val, int n) {
+unsigned char *lrotate(unsigned char *val, int n) {
 	unsigned int t;
+	unsigned int *dh;
 
 	t = *val;
-	for(t = 0; val[t]; t++) val[t];
-/*
+
 	for(int i = 0; i < n; i++) {
 		t = t << 1;
 
 		if(t & 256)
 			t = t | 1;
 	}
-*/
-	return t;
+
+	dh = &t;
+	return *dh;
 }
-/*
-unsigned char rrotate(unsigned char *val, int n) {
+
+unsigned char *rrotate(unsigned char *val, int n) {
 	unsigned int t;
 
 	t = *val;
@@ -55,6 +58,7 @@ unsigned char rrotate(unsigned char *val, int n) {
 	}
 
 	t = t >> 8;
-
+	
 	return t;
-}*/
+
+}

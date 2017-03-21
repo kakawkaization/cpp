@@ -5,23 +5,19 @@ unsigned char rrotate(unsigned char val, int n);
 unsigned char lrotate(unsigned char val, int n);
 
 int main() {
-	char ch = 'T';
+	unsigned char ch= 't';
 
 	cout << "Исходное значение в двоичном коде:\n";
 
 	cout << ch << "\n";
 
 	cout << "Результат 8-кратного циклического сдвига влево:\n";
-        //for(int i = 0; i < 8; i++) {
-                ch = lrotate(ch, 1);
-                cout << ch << "\n";
-//        }
+	ch = lrotate(ch, 1);
+	cout << ch << "\n";
 
 	cout << "Результат 8-кратного циклического сдвига вправо:\n";
-	//for(int i = 0; i < 8; i++) {
-		ch = rrotate(ch, 1);
-		cout << ch << "\n";
-//	}
+	ch = rrotate(ch, 1);
+	cout << ch << "\n";
 
 	return 0;
 }

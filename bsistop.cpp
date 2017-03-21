@@ -5,15 +5,15 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 	char *vm;
-	char start[100];
+	char com[50];
 
 	if(argc != 2) {
-		cout << "Usage: bsistart <vm>\n";
+		cout << "Usage: bsistop <vm>\n";
 	}
 
 	vm = argv[1];
-	sprintf(start, "screen -d -m -S %s sh -c 'cd /home/artem/%s && touch ho'", vm, vm); 
-	system(start);
+	sprintf(com, "bhyvectl --destroy --vm=%s", vm);
+	system(com);
 
 	return 0;
 }
