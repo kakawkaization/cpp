@@ -6,7 +6,7 @@ int main() {
 
     cout << "Help instructions:\n";
     cout << " 1. if\n";
-    cout << " 2. switch\n";
+    cout << " 2. switch\n\n";
     cout << "Choose help option: ";
     cin >> choice;
 
@@ -20,6 +20,16 @@ int main() {
             break;
         case '2':
             cout << "Syntax of instruction switch:\n\n";
-            cout << "switch("
+            cout << "switch(expression) {\n";
+            cout << "    case constant:\n";
+            cout << "    sequence of instructions\n";
+            cout << "    break;\n";
+            cout << "    // ...\n";
+            cout << "}\n";
+            break;
+        default:
+            cout << "No such option.\n";
     }
+
+    return 0;
 }
