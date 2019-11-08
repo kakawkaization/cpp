@@ -13,5 +13,16 @@ int main() {
         if(guess == magic) {
             cout << "** Right ** ";
             cout << magic <<
-                << "is that number.\n";
-    }
+                "is that number.\n";
+        }
+        else {
+            cout << "...Very sad, but you wrong.\n";
+            if(guess > magic)
+                cout << "Your number more tnan magic number.\n";
+            else
+                cout << "Your number less tnan magic number.\n";
+        }
+    } while(guess != magic);
+
+    return 0;
+}
